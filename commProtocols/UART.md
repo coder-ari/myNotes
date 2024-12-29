@@ -2,8 +2,7 @@
 * Bus Topology
  All the devices get connected to a common bus where they need to talk to each other throught the 
  bus. If they need to communicate with all the devices, it will broadcast. If one of the devices 
- is disconnected, still all the other devices are able to communicate.
- Example: CAN
+ is disconnected, still all the other devices are able to communicate. Example: CAN
  ![image](https://github.com/user-attachments/assets/b881e992-4053-4bb1-bf7d-4dbc0840c405)
 
 * Star Topology

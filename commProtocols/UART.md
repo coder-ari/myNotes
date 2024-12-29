@@ -11,6 +11,7 @@
 
 * ### Ad-Hoc/Peer To Peer Topology : ###
  Two devices talk to each other. Example: UART
+ 
  ![image](https://github.com/user-attachments/assets/a2f6add2-5b93-4e45-9ca1-087e592b5430)
 
 # UART #

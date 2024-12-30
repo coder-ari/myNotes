@@ -16,8 +16,19 @@
 
 # UART #
 UART is a character oriented protocol that means data is sent byte by byte. The RX (Reciever) of Device 1 is connected to TX(Transmitter) of Device 2 and vice-versa.
-* Lines are High by default
+* Lines are High by default, the start bit pulls them low
 
 ### Data Frame ###
-![image](https://github.com/user-attachments/assets/d007d6af-9768-4277-80f3-609c61ff0296)
+The data frame consists of a start bit, 8 data bits, a parity bit and a stop bit
+![image](https://github.com/user-attachments/assets/663319a3-d2e6-40ed-a517-3f36668dd15a)
+
+### RS232 ###
+* 9 pin connector
+* Multiple handshakes to prevent data loss
+* 1's: -3V to -25V
+* 0's: +3V to +25V
+* ![image](https://github.com/user-attachments/assets/de17f49f-4032-4c04-b223-29c9f0a36dee)
+
+### Programming Approach ###
+* #### Bit Banging ####
 

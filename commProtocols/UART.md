@@ -31,4 +31,30 @@ The data frame consists of a start bit, 8 data bits, a parity bit and a stop bit
 
 ### Programming Approach ###
 * #### Bit Banging ####
+   ![image](https://github.com/user-attachments/assets/d7652171-eed0-4c86-a258-1959cbfd180a)
+  In Bit Banging procedure, a data transfer rate(baud rate) is decided, at which the data is 
+  sent. The data is sent bit by bit serially. Let's send the character A whose binary 
+  represntation is 01000001. Initially the lines are high, but when the start bit is sent, the 
+  lines are pulled low, and the data is sent bit by bit, and the again it is pulled high.
+
+* #### Uart Peripherals ####
+  ![image](https://github.com/user-attachments/assets/dc8f643c-3c54-4e06-9a06-ad9ffc601591)
+  The data is sent from the transmit register to the shift register parallely and then serially 
+  through the wire. A PISO( Parallel In Serial Out) Register is used. The data is recieved 
+  serially from the wire using the shift register and sent parallely to the recieve register.
+  A SIPO( Serial In Parallel Out Register is used.
+  ![image](https://github.com/user-attachments/assets/d5ce692a-152c-4fd5-b6eb-d018904538ab)
+  The data is shifted every clock pulse, and hence the baud rate and the clock pulse play a 
+  very important role here.
+
+### Configuring for UART ###
+1. Configuring the Baud Rate
+2. Data Loading
+3. Data Transmission
+4. Monitor Data
+5. 1. Looping Method (Continue to look in the status bit if the data is sent)
+   2. Interrupt Method ( When the Data is Sent, an ISR is activated)
+      
+
+
 

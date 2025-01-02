@@ -17,5 +17,10 @@ MISO: Master In Slave Out
 ![image](https://github.com/user-attachments/assets/2017ed8a-9e47-478e-9126-a1c2037cade1)
 ![image](https://github.com/user-attachments/assets/3dfcc554-66b6-4ec8-93d9-939b16eeac84)
 
+## Transmission Working ##
+https://github.com/user-attachments/assets/feec8c05-febb-445b-9616-0b62db5fe40c
+
+
+
 
 
